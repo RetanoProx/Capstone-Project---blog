@@ -1,0 +1,11 @@
+<div class="grid-container">
+    <%- include('partials/sideMenu.ejs') %>
+    <div>
+        <h3>Edit Post</h3>
+        <form action="/editPost/<%= index %>" method="post">
+            <textarea name="message" rows="4" cols="50"><%= message %></textarea>
+            <button class="btn btn-primary rounded-pill px-3" type="submit">Save</button>
+        </form>
+        <a class="btn btn-primary rounded-pill px-3" href="/">Back to Home</a>
+    </div>
+</div>

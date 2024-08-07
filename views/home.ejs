@@ -1,0 +1,26 @@
+<div class="grid-container">
+    <%- include('partials/sideMenu.ejs') %>
+    <div class="blogGrid">
+        <h4>Messages:</h4>
+        <ul>
+            <% messages.forEach((message, index) => { %>
+                <li>
+                    <div class="cloud-text content">
+                        <%= message %>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle">...</button>
+                            <div class="dropdown-menu2">
+                                <a class="btn btn-outline-secondary" href="/editPost/<%= index %>">Edit</a>
+                                <form action="/deletePost/<%= index %>" method="POST" style="display:inline;">
+                                    <button class="btn btn-outline-secondary" type="submit" >Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+        <a class="btn btn-primary rounded-pill px-3" href="/newPost">Add New Post</a>
+    </div>
+</div>
+
