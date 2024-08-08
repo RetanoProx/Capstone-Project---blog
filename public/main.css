@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
+    font-size: 20px; /* Установи размер шрифта сразу здесь */
 }
 
 .grid-container {
@@ -17,11 +18,6 @@ body {
     padding: 20px;
     box-sizing: border-box;
     overflow-wrap: break-word; /* Перенос длинных слов */
-}
-
-/* Устанавливаем базовый размер шрифта для всего документа */
-body {
-    font-size: 20px; /* Замените 18px на желаемый размер */
 }
 
 /* Для всех элементов, которым нужен фон в виде облачка */
@@ -87,8 +83,6 @@ h4 {
     color: white;
 }
 
-
-
 .dropdown-toggle:focus + .dropdown-menu2, .dropdown-menu2:hover {
     display: block;
 }
@@ -110,7 +104,6 @@ textarea {
     box-sizing: border-box;
 }
 
-
 @media (max-width: 768px) {
 
     .grid-container {
@@ -126,8 +119,6 @@ textarea {
     }
 
 }
-
-
 
 @media (max-width: 576px) {
 
