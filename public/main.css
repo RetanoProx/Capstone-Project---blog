@@ -99,6 +99,16 @@ h4 {
 
 }
 
+form {
+    max-width: 500px;
+    overflow-x: auto;
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
 
 
 @media (max-width: 768px) {
